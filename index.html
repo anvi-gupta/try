@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SociallyBetter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="game">
+        <section>
+            <img id="imgg" src="./assets/Screenshot (68).png" alt="">
+        <h1>Do you think your house help’s son <br>
+            and you have
+             equal rights to play in the community garden?</h1>
+             <br>
+             <img src="https://www.childrens.com/wps/wcm/connect/childrenspublic/487d178c-53ef-492b-ab1c-e6ae6dc17fab/shutterstock_677799799_800x480.jpg?MOD=AJPERES&CVID=" alt="">
+<br><br>
+<input type="button" value="Yes" class="button" id="yes1"><input type="button" value="No" class="button" id="no1">
+</section>
+    </div>
+    
+    <div id="game2">
+        <section>
+            <img id="imgg" src="./assets/Screenshot (68).png" alt="">
+        <h1>Do you think you and the sanitary <br> worker 
+            in your housing society have
+            equal rights to go to  the religious place?</h1>
+             <br>
+             <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F2087322%2Fpexels-photo-2087322.jpeg%3Fcs%3Dsrgb%26dl%3Dpeople-walking-up-and-down-the-stairs-near-temple-2087322.jpg%26fm%3Djpg&f=1&nofb=1" alt="">
+<br><br>
+<input type="button" value="Yes" class="button2" id="yes2"><input type="button" value="No" class="button2" id="no2">
+</section>
+    </div>
+    <div id="game3">
+        <section>
+            <img id="imgg" src="./assets/Screenshot (68).png" alt="">
+        <h1>Do you think a girl and boy  
+            of equal calibre should be
+             treated 
+            equally while giving admission to college?</h1>
+             <br>
+             <img src="https://fthmb.tqn.com/cUSnRnrHnSniWIFjig_j5wK-gIw=/2121x1414/filters:fill(auto,1)/GettyImages-568518263-59a683b0d963ac0011b85626.jpg" alt="">
+<br><br>
+<input type="button" value="Yes" id="yes3"><input type="button" value="No" id="no3">
+</section>
+    </div>
+    <script>
+var yes1=document.getElementById("yes1");
+var yes2=document.getElementById("yes2");
+var yes3=document.getElementById("yes3");
+var no1=document.getElementById("no1");
+var no2=document.getElementById("no2");
+var no3=document.getElementById("no3");
+
+yes1.onclick=()=>{
+    document.getElementById("game").style.display="none";
+    document.getElementById("game2").style.display="inherit";
+}
+no1.onclick=()=>{
+    document.getElementById("game").style.display="none";
+    document.getElementById("game2").style.display="inherit";
+}
+yes2.onclick=()=>{
+    document.getElementById("game2").style.display="none";
+    document.getElementById("game3").style.display="inherit";
+}
+no2.onclick=()=>{
+    document.getElementById("game2").style.display="none";
+    document.getElementById("game3").style.display="inherit";
+}
+yes3.onclick=()=>{
+    location.href="./inequal.html";
+}
+no3.onclick=()=>{
+    location.href="./inequal.html";
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up</title>
+    <link rel="stylesheet" href="./signup.css">
+</head>
+<body id="body">
+    <section id="sect"> 
+        <h1>Sign up:</h1><br>
+        <form action="">
+        <label for="email">Email Address</label>
+        <input type="text" placeholder="Type here...">
+        <label for="password">Password</label><br>
+        <input type="password" id="myInput" placeholder="Type here...">
+        
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Type here...">
+        
+    </form>
+    <input type="submit" id="submit" onclick="on()">
+</section>
+<section id="secti">
+    <form action="">
+<label for="">What is 43 multiplied by 52?</label>
+<br><input type="number" id="input" placeholder="Type here...">
+</form>
+<input type="submit" id="sub" onclick="sub()">
+</section>
+
+
+<section id="sectio">
+    <form id="form" action="">
+<label id="label" for="">What is 34 multiplied by 42?</label>
+<br><input type="number" id="input1" placeholder="Type here...">
+</form>
+<input type="submit" id="subm" onclick="subm()">
+</section>
+
+    
+<script>
+
+    
+
+signUp.onclick=()=>{
+    location.href="./signup.html";
+}
+
+
+function on(){
+    document.getElementById("sect").style.display="none";
+    document.getElementById("secti").style.display="inherit";
+}
+
+
+
+function sub(){
+    if(input.value==2236){
+        document.getElementById("secti").style.display="none";
+        document.getElementById("sectio").style.display="inherit";
+
+
+    } else{
+        location.href="./oops.html";
+    }
+}
+
+function subm(){
+    if(input1.value==1428){
+        location.href="./thank.html";
+    }
+    else{
+        location.href="./oops.html";
+    }
+}
+</script>
+</body>
+</html>

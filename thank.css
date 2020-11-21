@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+body{
+    background: linear-gradient(seashell,wheat);
+    height: 100vh;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: center;
+    font-size: 30px;
+}
+#h1{
+    color: purple;
+}
+#h2{
+    color: dodgerblue;
+}
+#h3{
+    color: lightblue;
+}

@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+
+}
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn-images-1.medium.com%2Fmax%2F1600%2F1*hv6xpc-qcAsIzZgwJeeGpA.png&f=1&nofb=1');
+    background-size: 100% 97%;
+    height: 609px;
+    width: 100%;
+    color: white;
+}
+header>h1{
+    animation: dd 3s infinite;
+    animation-play-state: running;
+    position: relative;
+    text-shadow: 1px 1px 3px black;
+    width: 55%;
+    margin-left: 300px;
+    text-align: center;
+    margin: auto;
+}
+@keyframes dd{
+    from{
+        background-color: turquoise;
+        padding: 5px;
+    }
+    to{
+        background-color: mediumvioletred;
+        padding: 5px;
+
+    }
+}
+#container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 609px;
+    position: absolute;
+    width: 130px;
+    background: radial-gradient(rgb(117, 0, 128), rgb(56, 28, 218));
+    z-index: 2;
+    text-align: center;
+    
+}
+#container li a{
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    font-weight: bold;
+}
+#li{
+    color: turquoise;
+    font-weight: bolder;
+    
+}
+hr{
+    height:8px;
+    background-color: violet;
+    border: none;
+}
+#background{
+    width: 110px;
+    height: 120px;
+    border-radius:10px 0px 10px 10px;
+    margin-left: 1153px;
+}
+#scroll{
+    width: 120px;
+    height: 120px;
+    margin-left: 580px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+#scroll{
+    position: relative;
+    animation: mymove 3s infinite;
+    animation-play-state: running;
+    text-align: center;
+
+}
+@keyframes mymove{
+    from{
+        top: 40px;
+    }
+    to{
+        top: 180px;
+    }
+}
+#content>p{
+    font-size: 25px;
+    float: left;
+}
+#content>img{
+    width: 300px;
+    height: 300px;
+    margin: 40px;
+    margin-right: 5px;
+}
+#content{
+    background-color: #12E2AE;
+    padding: 18px;
+    font-weight: bold;
+}
+
+#content>img:hover{
+    -webkit-box-shadow: 1px 1px 4px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    1px 1px 4px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         1px 1px 4px 0px rgba(50, 50, 50, 0.75);
+    transform: scale(1.20);
+    cursor: pointer;
+}
+#ahref{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    margin-left: 550px;
+}
+span{
+    text-decoration: underline black;
+}
+span:hover{
+    color: white;
+    background-color: black;
+    transition: 0.6s ease;
+}

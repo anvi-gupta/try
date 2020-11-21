@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: center;
+    background: linear-gradient(rgb(128, 0, 70), rgb(202, 28, 218));
+    height: 104%;
+}
+#container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 124%;
+    position: absolute;
+    width: 130px;
+    background: radial-gradient(rgb(117, 0, 128), rgb(56, 28, 218));
+    z-index: 2;
+}
+#container li a{
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    font-weight: bold;
+}
+#li{
+    color: turquoise;
+    font-weight: bolder;
+}
+hr{
+    height:8px;
+    background-color: violet;
+    border: none;
+}
+#background{
+    width: 110px;
+    height: 120px;
+    border-radius: 10px 0px 10px 10px;
+    margin-top: 0px;
+    margin-right: -1160px;
+}
+section{
+    width: 500px;
+    background-color: pink;
+    margin: auto;
+    padding: 10px 0;
+}
+section>img{
+    width: 200px;
+    height: 200px;
+}
+div{
+    text-align: center;
+}   
+p, input[type="text"], input[type="number"],input[type="date"], textarea,form{
+    width: 350px;
+    padding: 8px;
+}
+p,form{
+    margin: auto;
+}
+label{
+    font-weight: bold;
+}
+input, textarea{
+    margin: 10px;
+}
+input[type="submit"]{
+    background-color: #f50a5f;
+    color: white;
+    margin: auto;
+    display: block;
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: "Mali", cursive;
+}

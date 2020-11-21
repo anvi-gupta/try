@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url('https://wallpapercave.com/wp/LhywWJY.jpg');
+    font-family: 'Noto Sans JP', sans-serif;
+}
+#game{
+    width: 600px;
+    height: 600px;
+    background-color: deeppink;
+    border-radius: 50%;
+    margin-left: 330px;
+    position: absolute;
+    font-size: 18px;
+    padding-bottom: 5px;
+}
+input[type="button"]{
+    background-color: gray;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 8px;
+    padding: 10px 30px;
+    margin-left: 7.5rem;
+    cursor: pointer;
+}
+h1{
+    margin-left: 80px;
+    font-size: 27px;
+}
+section{
+    margin-top: 100px;
+}
+section img{
+    width: 250px;
+    height: 180px;
+    margin-left: 180px;
+}
+#game2,#game3{
+    display: none;
+    width: 600px;
+    height: 600px;
+    background-color: deeppink;
+    border-radius: 50%;
+    margin-left: 330px;
+    position: absolute;
+    font-size: 5px;
+}
+
+#imgg{
+    width: 90px;
+    height: 90px;
+    margin-top: -60px;
+    margin-left: 240px;
+    border-radius: 10px;
+}
+@media only screen and(max-width:600px){
+    #game,#game2,#game3{
+        height: 100px;
+        width: 100px;
+        margin-top: 50px;
+        padding: 8px;
+        margin: auto;
+    }
+}

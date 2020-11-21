@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.jsumsnews.com%2Fwp-content%2Fuploads%2F2016%2F08%2Fimgres-1.png&f=1&nofb=1');
+    background-size: 100% 97%;
+    height: 609px;
+    width: 100%;
+    color: white;
+}
+header>h1{
+    text-shadow: 1px 1px 3px black;
+    position: relative;
+    animation: h1 4s infinite;
+    animation-play-state: running;
+    text-align: center;
+
+}
+
+@keyframes h1{
+    from{
+        color: blue;
+        cursor: pointer;
+        text-decoration: underline dotted white;
+    
+    }
+    to{
+        color: white;
+    }
+}
+
+#container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 609px;
+    position: absolute;
+    width: 130px;
+    background: radial-gradient(rgb(117, 0, 128), rgb(56, 28, 218));
+    z-index: 2;
+    text-align: center;
+
+}
+#container li a{
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    font-weight: bold;
+}
+#li{
+    color: turquoise;
+    font-weight: bolder;
+    
+}
+hr{
+    height:8px;
+    background-color: violet;
+    border: none;
+}
+#background{
+    width: 110px;
+    height: 120px;
+    border-radius:10px 0px 10px 10px;
+    margin-left: 1153px;
+}
+#scroll{
+    width: 120px;
+    height: 120px;
+    margin-left: 580px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+
+}
+#content>p{
+    font-size: 25px;
+    float: left;
+}
+#content>img{
+    width: 350px;
+    height: 350px;
+    margin: 10px;
+    margin-top: 150px;
+}
+#content{
+    background-color: #00A3A8;
+    padding: 18px;
+    font-weight: bold;
+    height: 100%;
+}
+
+#content>img:hover{
+    -webkit-box-shadow: 1px 1px 4px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    1px 1px 4px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         1px 1px 4px 0px rgba(50, 50, 50, 0.75);
+    transform: scale(1.20);
+    cursor: pointer;
+}
+#ahref>a{
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 570px;
+    font-size: 20px;
+    color: black;
+    margin-bottom: 0px;
+}
+
+#scroll{
+    position: relative;
+    animation: scroll 3s infinite;
+    animation-play-state: running;
+}
+@keyframes scroll{
+    from{
+        top: 40px;
+    }
+    to{
+        top: 180px;
+    }
+}
+span{
+    text-decoration: underline black;
+}
+span:hover{
+    color: white;
+    background-color: black;
+    transition: 0.6s ease;
+}
+@media only screen and(max-width:600px){
+    #ahref{
+        margin-right: 180px;
+    }
+}
